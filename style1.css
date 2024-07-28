@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 8px;
+}
+nav{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 82px,0;
+    background-color: rgb(15, 26, 26);
+    font-size: 32px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap:20px;
+    color: blueviolet;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.homepage-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.homepage-content h1{
+    font-size: 40px;
+    color:rgb(255, 25, 0);
+    background-color: aliceblue;
+    font-weight: 500;
+}
+.homepage-content p{
+    font-size: 30px;
+    background-color: aliceblue;
+    color: rgb(255, 25, 0);
+    justify-content: center;
+}
+.About Us{
+    width:100px;
+}
+.About us img{
+    max-width: 100%;
+}
+.Receipes{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Receipes h1{
+    font-style: 32px;
+    color:chocolate;
+}
+#Receipes img{
+max-width: 100%;
+}
+@media only screen and(max-width:520px){
+    #header{
+        min-height: 50vh;
+    }
+    .header-content h1{
+        font-size: 32px;
+    }
+    .header-content p{
+        font-size: 24px;
+    }
+    nav ul{
+        position: absolute;
+        top:0;
+        right: 0;
+        flex-direction:column;
+        background-color: darkcyan;
+        width: 80%;
+        height: 100%;
+        align-items: end;
+        padding-top: 60px;
+    }
+    nav li{
+        border-bottom: 1px solid var(--primary-dark--);
+        width: 200%;
+        padding: 8px 16px;
+        text-align: right;
+    }
+    .rec{
+        display: flex;
+        background-color: antiquewhite;
+    }
+}
